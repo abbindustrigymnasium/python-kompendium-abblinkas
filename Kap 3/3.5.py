@@ -24,5 +24,3 @@ elif namn in female:
     print ("Kvinnor:", female) 
 else:
     print("Namnet finns inte med i någon av listorna")
-
-

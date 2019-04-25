@@ -23,4 +23,3 @@ if lookalikes == "":
     print("Du liknar dessvärre ingen kändis...")
 else:
     print("Du liknar " + lookalikes + "!")
-

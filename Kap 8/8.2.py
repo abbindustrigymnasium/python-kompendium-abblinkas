@@ -1,3 +1,5 @@
+#Använder en gammal uppgift fast importerar en modul från web.py
+import web
 import requests
 
 print("Enter the cities name")
@@ -9,9 +11,7 @@ cities = [
 ]
 
 if city.lower() in cities:
-    url = 'https://54qhf521ze.execute-api.eu-north-1.amazonaws.com/weather/' + city.lower()
-    r = requests.get(url)-
-    APIresponse = r.json()
+    APIresponse = web.get('https://54qhf521ze.execute-api.eu-north-1.amazonaws.com/weather/' + city.lower())
     forecasts = APIresponse["forecasts"]
     print("Forecasts: ")
     print(forecasts[0]["date"] + " is prognosed to be " + forecasts[0]["forecast"] )

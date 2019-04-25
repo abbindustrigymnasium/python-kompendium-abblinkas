@@ -15,7 +15,7 @@ print("Select artist:")
 name = str(input())
 print("-------------")
 
-names = ["Ariana Grande", "Avicii", "Blink-182", "Brad Paisley", "Ed sheeran", "Imagine Dragons", "Maroon 5", "Scorpions"]
+names = ["Ariana Grande", "Avicii", "Blink-182", "Brad Paisley", "Ed Sheeran", "Imagine Dragons", "Maroon 5", "Scorpions"]
 
 if name.title() in names:
     for i in artists:

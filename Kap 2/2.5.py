@@ -1,4 +1,3 @@
-# Övningsuppgift 2.5
 import math
 
 print("Hur många vill äta 2 vanliga korvar?")
