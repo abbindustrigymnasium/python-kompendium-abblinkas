@@ -1,11 +1,12 @@
-male = [
+male = [ #en lista med mansnamn
 " Erik ", 
 " Lars ", 
 " Karl ",
 " Anders ",
 " Johan "
 ]
-female = [
+
+female = [ #en lista med flicknamn
 " Maria ",
 " Anna ",
 " Margareta ", 
@@ -17,6 +18,8 @@ del male[1]
 del male[1]
 
 del female[0]
+#raderar de mans och kvinnonamnen som skulle bort
 
 print ("Män:", male )
 print ("Kvinnor:", female )
+#skriver ut vilka namn som finns kvar i listorna

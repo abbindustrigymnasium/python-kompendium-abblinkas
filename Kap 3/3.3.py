@@ -1,11 +1,12 @@
-male = [
+male = [ #en lista med mansnamn
 " Erik ", 
 " Lars ", 
 " Karl ",
 " Anders ",
 " Johan "
 ]
-female = [
+
+female = [ #en lista med flicknamn
 " Maria ",
 " Anna ",
 " Margareta ", 
@@ -13,7 +14,8 @@ female = [
 "Eva" 
 ]
 
-male.append("Linus")
+male.append("Linus") #lägger till "Linus" till listan male
 
 print ("Män:", male )
 print ("Kvinnor:", female )
+#skriver ut vilka namn som nu finns i listorna

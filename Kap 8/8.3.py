@@ -1,4 +1,4 @@
-import ui
+import ui #importerar ui.py
 
 ui.line()
 ui.header("Exempel")
@@ -14,3 +14,5 @@ ui.echo("C | Ta bort vara ")
 ui.echo("X | Stäng programmet")
 ui.line()
 ui.prompt("Val")
+
+#anrop till funktioner i ui.py
