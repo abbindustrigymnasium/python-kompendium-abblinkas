@@ -41,6 +41,10 @@ def isValidNumber(x, num): #funktion för att kolla om det man skickar in är et
             return False
     else:
         return False
+def outputText(header, echo):
+    ui.header(header)
+    ui.echo(echo)
+    ui.line()
 
 def whatDifficulty(): #funktion för att välja svårighetsgrad
     ui.header("Difficulty")
@@ -99,19 +103,13 @@ while True: #frågesporten körs tills det breakas, det breakas när antalet fr�
         if isValidNumber(svar, 5): #om svaret är mellan 1 och 4
             if alt[int(svar)-1] == alt[correctAnswerNum -1]: #om svaret är korrekt
                 correctAnswers += 1 #lägger till ett poäng i minne 
-                ui.header("Your score: " + str(correctAnswers))
-                ui.echo("Correct! Your answer was " + str(correctAnswerNum))
-                ui.line()
-                integer = 1 #sätter integer till 1 igen så att svarsalterntiven inte ökar
+                outputText("Your score: " + str(correctAnswers), "Correct! Your answer was " + str(correctAnswerNum)) #anropar funktionen outputText som skriver ut rätt eller fel samt poäng
+                integer = 1
             else:
-                ui.header("Your score: " + str(correctAnswers))
-                ui.echo("Wrong! Correct answer was " + str(correctAnswerNum))
-                ui.line()
+                outputText("Your score: " + str(correctAnswers), "Wrong! Correct answer was " + str(correctAnswerNum)) #anropar funktionen outputText som skriver ut rätt eller fel samt poäng
                 integer = 1
         else:
-            ui.header("Your score: " + str(correctAnswers))
-            ui.echo("Wrong! Correct answer was " + str(correctAnswerNum))
-            ui.line()
+            outputText("Your score: " + str(correctAnswers), "Correct! Your answer was " + str(correctAnswerNum)) #anropar funktionen outputText som skriver ut rätt eller fel samt poäng
             integer = 1
     else: #om programmet frågat lika många frågor som användaren har valt
         ui.line()
